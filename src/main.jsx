@@ -8,11 +8,12 @@ import Carousal from './component/Carousal.jsx'
 import About from './component/About.jsx'
 import Contact from './component/Contact.jsx'
 import Header from './component/Header.jsx'
+import Card from './component/Card.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Layout/>}>
-      <Route path='' element={<Carousal/>}/>
+      <Route path='' element={<App/>}/>
       <Route path='about' element={<About/>}/>
       <Route path='contact' element={<Contact/>}/>
     </Route>
