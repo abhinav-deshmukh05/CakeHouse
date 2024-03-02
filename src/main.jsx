@@ -9,11 +9,14 @@ import About from './component/About.jsx'
 import Contact from './component/Contact.jsx'
 import Header from './component/Header.jsx'
 import Card from './component/Card.jsx'
+import Product from './component/Product.jsx'
+
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Layout/>}>
       <Route path='' element={<App/>}/>
+      <Route path='product' element={<Product/>}/>
       <Route path='about' element={<About/>}/>
       <Route path='contact' element={<Contact/>}/>
     </Route>

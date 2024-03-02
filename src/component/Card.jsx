@@ -1,20 +1,24 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function Card({ title, price, rating, imageUrl }) {
+  const navigate = useNavigate();
   return (
-    <div className="mt-5 mb-5 flex flex-wrap text-center max-w-sm rounded-lg overflow-hidden shadow-lg">
+    <div className="mx-4 my-3 px-3 py-2 flex flex-wrap text-center w-[250px] rounded-lg overflow-hidden shadow-lg sm:w-250px sm:h-250px">
       <img className="w-full" src={imageUrl} alt={title} />
 
       <div className="flex flex-col items-start px-3 py-2">
         <div className="font-bold text-xl mb-2">{title}</div>
-        <span className="text-gray-700 text-base">Price: &#8377;{price}</span>
-        <span className="text-gray-700 text-base">Rating: {rating} &#9733;</span>
-      </div>
-
-      <div className="px-3 py-2">
-      </div>
-
-      <div className="px-3 py-2">
+        
+        <div className='flex justify-between'>
+          <div className='flex flex-col mr-9 justify-center'>
+            <span className="text-gray-700 text-base">Price: &#8377;{price}</span>
+            <span className="text-gray-700 text-base inline">{rating}<p className='text-yellow-400 inline'> &#9733;</p> </span>
+          </div>
+          <button onClick={()=>navigate('/product')} className='px-3 py-2 items-end bg-gray-200 font-bold rounded-lg hover:bg-orange-500 hover:text-white h-10 w-20'>
+            Buy
+          </button>
+        </div>
       </div>
     </div>
   );

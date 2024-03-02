@@ -7,7 +7,7 @@ export default function Header() {
       setMobileMenuOpen(!isMobileMenuOpen);
     };
     return (
-        <header className=" rounded-lg shadow sticky z-50 top-0">
+        <header className=" rounded-lg shadow sticky z-50 top-0 overflow-hidden">
             <nav className="bg-white border-gray-200 px-4 lg:px-6 py-2.5 sm:px-0 py-0">
                 <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl ">
                     <div className='flex'>
@@ -19,7 +19,7 @@ export default function Header() {
                             />
                         </Link>
                         {/* this is menu button for mobile */}
-                        <div className="lg:hidden">
+                        <div className="lg:hidden flex justify-end">
                             <button
                             onClick={toggleMobileMenu}
                             className="text-gray-800 focus:outline-none"
