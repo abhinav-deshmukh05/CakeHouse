@@ -143,19 +143,19 @@ function Product() {
             <p className='mt-2 text-left'>4.9 <p className='text-yellow-400 inline font-mono'> &#9733;</p> (50+ Reviews)</p>
             <div className='mt-7 text-left'><span className=' text-left line-through text-gray-600 mr-2 text-2xl'>₹ 599   </span><span className='text-2xl mr-2 font-bold'>₹ 499</span> 
             <span className=' text-green-500 text-2xl'>(10% OFF)</span></div>
-            <div className='mt-7 text-left'>
+            <div className='mt-7 flex text-left'>
+              <form class="max-w-lg ">
               <span className='font-semibold'>Select Weight</span>
-              <div className='mt-3 flex flex-col text-left justify-between'>
-                <div className='justify-start flex gap-3 overflow-x-scroll scroll-smooth'>
-                    <button className='px-3 py-2 bg-gray-200 font-bold rounded-lg hover:bg-orange-500 hover:text-white' >0.5 Kg</button>
-                    <button className='px-3 py-2 bg-gray-200 font-bold rounded-lg hover:bg-orange-500 hover:text-white' >1.0 Kg</button>
-                    <button className='px-3 py-2 bg-gray-200 font-bold rounded-lg hover:bg-orange-500 hover:text-white' >2.0 Kg</button>
-                    <button className='px-3 py-2 bg-gray-200 font-bold rounded-lg hover:bg-orange-500 hover:text-white' >3.0 Kg</button>
-                    <button className='px-3 py-2 bg-gray-200 font-bold rounded-lg hover:bg-orange-500 hover:text-white' >4.0 Kg</button>
-                </div>
-              </div>
+                <select class="my-2 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-orange-500 focus:border-orange-500 block w-full p-2.5">
+                  <option >Choose a size</option>
+                  <option >0.5 Kg</option>
+                  <option >1 Kg</option>
+                  <option >1.5 Kg</option>
+                  <option >2 Kg</option>
+                </select>
+              </form>
             </div>
-            <div className='mt-7 text-left'>
+            <div className='mt-5 text-left'>
               <span className='font-semibold'>Messsage On Cake</span>
               <input className= 'mt-2 w-full h-10 placeholder-slate-400 border border-dashed border-amber-600 rounded-lg' type="text" placeholder='  Enter Your Message...' />
             </div>
