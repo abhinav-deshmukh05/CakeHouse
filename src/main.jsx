@@ -10,13 +10,18 @@ import Contact from './component/Contact.jsx'
 import Header from './component/Header.jsx'
 import Card from './component/Card.jsx'
 import Product from './component/Product.jsx'
+import Cart from './component/Cart.jsx'
+import Cartitem from './component/Cartitem.jsx'
 
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Layout/>}>
       <Route path='' element={<App/>}/>
-      <Route path='product' element={<Product/>}/>
+      <Route path='product/:productId' element={<Product/>}>
+        {/* <Route path='cart' element={<Cart/>}/> */}
+      </Route>
+      <Route path='/product/cart' element={<Cart/>}/>
       <Route path='about' element={<About/>}/>
       <Route path='contact' element={<Contact/>}/>
     </Route>

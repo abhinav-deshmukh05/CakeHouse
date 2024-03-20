@@ -42,6 +42,7 @@ function App() {
           {data.map((item)=>(
             <Card 
             key={useId()}
+            id={useId()}
             title={item.title}
             price={item.price}
             imageUrl={item.imageUrl}

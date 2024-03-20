@@ -9,8 +9,6 @@ function CatagoryMenu() {
             <button className='px-3 py-2 bg-gray-200 font-bold rounded-lg hover:bg-orange-500 hover:text-white' >Chocolate</button>
             <button className='px-3 py-2 bg-gray-200 font-bold rounded-lg hover:bg-orange-500 hover:text-white' >Vanella</button>
             <button className='px-3 py-2 bg-gray-200 font-bold rounded-lg hover:bg-orange-500 hover:text-white' >StrowBerry</button>
-
-            
         </div>
     </div>
   )

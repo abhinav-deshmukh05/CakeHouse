@@ -7,14 +7,14 @@ export default function Header() {
       setMobileMenuOpen(!isMobileMenuOpen);
     };
     return (
-        <header className=" rounded-lg shadow sticky z-50 top-0 overflow-hidden">
+        <header className=" rounded-lg shadow sticky z-50 top-0 overflow-hidden ">
             <nav className="bg-white border-gray-200 px-4 lg:px-6 py-2.5 sm:px-0 py-0">
                 <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl ">
                     <div className='flex'>
                         <Link to="/" className="flex justify-start">
                             <img
                                 src='/logo.png'
-                                className="mr-3 h-15 w-1/2 sm:w-50 h-15  md: lg:w-1/12"
+                                className="mr-3 h-15 w-1/2 sm:w-50 h-15  md: lg:w-24"
                                 alt="Logo"
                             />
                         </Link>
